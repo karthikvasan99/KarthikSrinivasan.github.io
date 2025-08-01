@@ -18,6 +18,28 @@
         p {
             font-size: 1.2em;
         }
+
+        .dont-click {
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border: none;
+            font-size: 15px;
+            cursor: pointer;
+            paddint-right: 16px;
+            padding-left: 16px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+            border-radius: 15px;
+
+            transition:
+                background-color 0.15s,
+                box-shadow 0.15s;
+        }
+
+        .dont-click:hover {
+            background-color: red;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+        }
     </style>
 </head>
 <body>
@@ -25,6 +47,6 @@
     <p>This is a simple website hosted on GitHub Pages.</p>
     <p>Stay tuned for more updates!</p>
     <p>Meanwhile, here's a button</p>
-    <button> Don't click </button>
+    <button class='dont-click'> Don't click </button>
 </body>
 </html>
